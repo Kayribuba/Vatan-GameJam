@@ -1,0 +1,1392 @@
+fileFormatVersion: 2
+guid: 031bbb7526ce69f4b80360f8b8998770
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7291613922717654799
+    second: Computer Parts_0
+  - first:
+      213: -8840237784036164042
+    second: Computer Parts_1
+  - first:
+      213: 5958605389776352244
+    second: Computer Parts_2
+  - first:
+      213: 2118775499650468130
+    second: Computer Parts_3
+  - first:
+      213: 4030872594053787973
+    second: Computer Parts_4
+  - first:
+      213: 4232351194790316314
+    second: Computer Parts_5
+  - first:
+      213: 3208397214605899724
+    second: Computer Parts_6
+  - first:
+      213: -7039199646111445013
+    second: Computer Parts_7
+  - first:
+      213: -4919352137215518651
+    second: Computer Parts_8
+  - first:
+      213: -8495076312158950042
+    second: Computer Parts_9
+  - first:
+      213: -278444111649662923
+    second: Computer Parts_10
+  - first:
+      213: 7128806153465633113
+    second: Computer Parts_11
+  - first:
+      213: 2793107735529390857
+    second: Computer Parts_12
+  - first:
+      213: -7170771755363150386
+    second: Computer Parts_13
+  - first:
+      213: 2113694309923985638
+    second: Computer Parts_14
+  - first:
+      213: -6814992489236661561
+    second: Computer Parts_15
+  - first:
+      213: 1672680259878679227
+    second: Computer Parts_16
+  - first:
+      213: -2255761204783240889
+    second: Computer Parts_17
+  - first:
+      213: 2760437833722372044
+    second: Computer Parts_18
+  - first:
+      213: -6542202337945818789
+    second: Computer Parts_19
+  - first:
+      213: 3493337957441509046
+    second: Computer Parts_20
+  - first:
+      213: -2604930186971333853
+    second: Computer Parts_21
+  - first:
+      213: 6602265193797765474
+    second: Computer Parts_22
+  - first:
+      213: -3284611868855728173
+    second: Computer Parts_23
+  - first:
+      213: -7461711494069700501
+    second: Computer Parts_24
+  - first:
+      213: -6892426808505610768
+    second: Computer Parts_25
+  - first:
+      213: -8238883174708581090
+    second: Computer Parts_26
+  - first:
+      213: 168587582613523266
+    second: Computer Parts_27
+  - first:
+      213: 3234843595940154780
+    second: Computer Parts_28
+  - first:
+      213: -8760361884659998530
+    second: Computer Parts_29
+  - first:
+      213: -7552390756883126239
+    second: Computer Parts_30
+  - first:
+      213: 6608123503150513214
+    second: Computer Parts_31
+  - first:
+      213: -9018126042487738252
+    second: Computer Parts_32
+  - first:
+      213: -1700061564444647121
+    second: Computer Parts_33
+  - first:
+      213: 7140596113644164352
+    second: Computer Parts_34
+  - first:
+      213: -7791838110033705539
+    second: Computer Parts_35
+  - first:
+      213: 3995909825397627272
+    second: Computer Parts_36
+  - first:
+      213: -5136383095785228387
+    second: Computer Parts_37
+  - first:
+      213: -1821386441541629636
+    second: Computer Parts_38
+  - first:
+      213: 6806030296480310389
+    second: Computer Parts_39
+  - first:
+      213: -8619325860235662978
+    second: Computer Parts_40
+  - first:
+      213: -8261731357617607949
+    second: Computer Parts_41
+  - first:
+      213: -250789122582590759
+    second: Computer Parts_42
+  - first:
+      213: 7787292443720482145
+    second: Computer Parts_43
+  - first:
+      213: 7668637404648053943
+    second: Computer Parts_44
+  - first:
+      213: -3327130338464723105
+    second: Computer Parts_45
+  - first:
+      213: 4301817218726500700
+    second: Computer Parts_46
+  - first:
+      213: -2707262615962862152
+    second: Computer Parts_47
+  - first:
+      213: -5211110419761683939
+    second: Computer Parts_48
+  - first:
+      213: -7713046642977252113
+    second: Computer Parts_49
+  - first:
+      213: -5525290376293256782
+    second: Computer Parts_50
+  - first:
+      213: 3774053474437780995
+    second: Computer Parts_51
+  - first:
+      213: 225104597097406678
+    second: Computer Parts_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Computer Parts_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 248
+        width: 36
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fd0e6ea34013560800000000000000
+      internalID: 7291613922717654799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 248
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63eb980b29a215580800000000000000
+      internalID: -8840237784036164042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 248
+        width: 36
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3f85e280831b250800000000000000
+      internalID: 5958605389776352244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 248
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22987775717676d10800000000000000
+      internalID: 2118775499650468130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 199
+        width: 59
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541fe6f844980f730800000000000000
+      internalID: 4030872594053787973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_5
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 199
+        width: 16
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a194d2adcf45cba30800000000000000
+      internalID: 4232351194790316314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 199
+        width: 16
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7ffe29444868c20800000000000000
+      internalID: 3208397214605899724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 168
+        width: 22
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befc876973dbf4e90800000000000000
+      internalID: -7039199646111445013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_8
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 167
+        width: 16
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548d5388b43fabbb0800000000000000
+      internalID: -4919352137215518651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_9
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 192
+        width: 36
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d2ee95a1d6b1a80800000000000000
+      internalID: -8495076312158950042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_10
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 192
+        width: 48
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53892534e84c22cf0800000000000000
+      internalID: -278444111649662923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 170
+        width: 7
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95910f13d6b9ee260800000000000000
+      internalID: 7128806153465633113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 170
+        width: 7
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90300abdfac13c620800000000000000
+      internalID: 2793107735529390857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_13
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 168
+        width: 10
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5dc24b41d4c7c90800000000000000
+      internalID: -7170771755363150386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 168
+        width: 10
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e898caa6c9555d10800000000000000
+      internalID: 2113694309923985638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 144
+        width: 16
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7caf71c30784c61a0800000000000000
+      internalID: -6814992489236661561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_16
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 144
+        width: 16
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb270e885dd863710800000000000000
+      internalID: 1672680259878679227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_17
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 144
+        width: 16
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749a9c2c22de1b0e0800000000000000
+      internalID: -2255761204783240889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 112
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf1297959b0f4620800000000000000
+      internalID: 2760437833722372044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_19
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 112
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59620eb2ad6535a0800000000000000
+      internalID: -6542202337945818789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_20
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 112
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b690b12d54da7030800000000000000
+      internalID: 3493337957441509046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_21
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 112
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bb1e4ebcd69dbd0800000000000000
+      internalID: -2604930186971333853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_22
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 121
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269cd35a635ff9b50800000000000000
+      internalID: 6602265193797765474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_23
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 121
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d782db68e6ba62d0800000000000000
+      internalID: -3284611868855728173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_24
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 119
+        width: 6
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68b6831eeca27890800000000000000
+      internalID: -7461711494069700501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 119
+        width: 6
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdc4a6d55e2950a0800000000000000
+      internalID: -6892426808505610768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_26
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 119
+        width: 12
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d6d81776b99ad80800000000000000
+      internalID: -8238883174708581090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_27
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 119
+        width: 12
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b883f5381f65200800000000000000
+      internalID: 168587582613523266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_28
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 112
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dc5ff8c1974ec20800000000000000
+      internalID: 3234843595940154780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 112
+        width: 5
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb028f0c741fc6680800000000000000
+      internalID: -8760361884659998530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_30
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 106
+        width: 12
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128a903fe94803790800000000000000
+      internalID: -7552390756883126239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_31
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 106
+        width: 12
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c32359055c4bb50800000000000000
+      internalID: 6608123503150513214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 82
+        width: 32
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470b1d9f42e29d280800000000000000
+      internalID: -9018126042487738252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_33
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 83
+        width: 32
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f216bf2b30b2868e0800000000000000
+      internalID: -1700061564444647121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_34
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 48
+        width: 32
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0059b46355e781360800000000000000
+      internalID: 7140596113644164352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_35
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 48
+        width: 31
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db507189584ddd390800000000000000
+      internalID: -7791838110033705539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_36
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 64
+        width: 32
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8899151a0d2547730800000000000000
+      internalID: 3995909825397627272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_37
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 66
+        width: 32
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d977661c9c6e7b8b0800000000000000
+      internalID: -5136383095785228387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_38
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 52
+        width: 6
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39c2397ea229b6e0800000000000000
+      internalID: -1821386441541629636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_39
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 52
+        width: 6
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5746148ae70e37e50800000000000000
+      internalID: 6806030296480310389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_40
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 32
+        width: 13
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79a0591cc0026880800000000000000
+      internalID: -8619325860235662978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_41
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 38
+        width: 6
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa2f7f4a1f685d80800000000000000
+      internalID: -8261731357617607949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_42
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 38
+        width: 6
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daceea2f94058cf0800000000000000
+      internalID: -250789122582590759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_43
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 30
+        width: 13
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dfa0ef735021c60800000000000000
+      internalID: 7787292443720482145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_44
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 30
+        width: 13
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc125fd6197c6a60800000000000000
+      internalID: 7668637404648053943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_45
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 20
+        width: 7
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f8266c598a3d1d0800000000000000
+      internalID: -3327130338464723105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_46
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 20
+        width: 7
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c591adae7ff13bb30800000000000000
+      internalID: 4301817218726500700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_47
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 14
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdb6d59efedd6ad0800000000000000
+      internalID: -2707262615962862152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_48
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 15
+        width: 9
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12a4c0deaa6ea7b0800000000000000
+      internalID: -5211110419761683939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_49
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 6
+        width: 6
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec525591f0c5f490800000000000000
+      internalID: -7713046642977252113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_50
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 6
+        width: 6
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1f7205da93253b0800000000000000
+      internalID: -5525290376293256782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_51
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 12
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3065133a3a1206430800000000000000
+      internalID: 3774053474437780995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computer Parts_52
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d06c4b307bbf1300800000000000000
+      internalID: 225104597097406678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

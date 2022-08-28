@@ -1,0 +1,44 @@
+*****************************
+*****************************
+
+ÖNEMLİ: ASSETLERİN DERİNLİĞİNİN ÇALIŞMASI İÇİN YAPILMASI GEREKEN=>
+Asset package i import ettikten sonra, inspector üstünde "Layers"=>"Edit Layers" a tıkla.
+Tags & Layers yazan yerin hemen sağında Slider Icon a (Soru işareti ve dikey 3 noktanın arasındaki icon) tıkla.
+VatanComputer2DAssets içerisinde yer alan Tag Manager'ı seç.
+
+BUNU YAPMAZSANIZ SORTING LAYER'LAR YÜKLENMEYECEĞİ İÇİN ASSETLER EXAMPLE SCENE DE DOĞRU ÇALIŞMAYACAKTIR 
+
+*****************************
+*****************************
+
+Merhabalar, Jam de işinize yaraması için basit bir 2D kit hazırladım. Kit 16x16 yı 1 birim olarak kabul ediyor.
+Oyundaki assetler 32x64 'e SIĞACAK BİR KARAKTER BOYUTU BAZ ALINARAK HAZIRLANDI.
+
+**********
+
+Kitte Vatan Topkapı'nın dışı basitçe, zemin kat ve ikinci kat mevcut. 
+
+**********
+
+Oyunda sadece birince katı üstünkörü eşyalarla donattım. Eşyaların collisionları yok. Eşyalar için assetlere 
+Assets/Sprite Sheets/Items dan ulaşabilirsiniz. 100'ün üzerinde parça var.
+
+**********
+
+Oyunda Example Scene de, hareket edip bölümü göstericek basit bir dummycharacter yarattım. Katlardaki duvar 
+Collision larını basit bir tilemap ile yaptım. 
+
+***********
+
+Oyunda 2D derinlik algısı vermek için 2 adet script hazırladım, Static Depth ve Dynamic Depth olarak. Basit 
+dökümantasyonları scriplerde mevcut.
+
+***********
+
+2. katta bazı yerleri kapısı var, ama içnden geçebiliyorsunuz. Eğer isterseniz aseti modifiye ederek kapıyı çıkarıp
+kendi assetlerinizi koyabilirsiniz. Eğer odaları kullanmayacaksınız görsel olarak iyi olması için boş odaların üzerini
+siyahla kaplamanızı tavsiye ederim.
+
+***********
+
+Herhangi bir soru olursa bana Digi Game kanalından (Halil Onur - Team Machiavelli) ulaşabilirsiniz.
