@@ -42,19 +42,9 @@ public class KameraChanger : MonoBehaviour
             foreach (Camera k in cameras)
             {
                 if (k != cameraToUse)
-                {
                     k.enabled = false;
-
-                    if (k.gameObject.GetComponent<AudioListener>() != null)
-                        k.GetComponent<AudioListener>().enabled = false;
-                }
                 else
-                {
                     k.enabled = true;
-
-                    if (k.gameObject.GetComponent<AudioListener>() != null)
-                        k.GetComponent<AudioListener>().enabled = true;
-                }
             }
 
             oldIndex = index;

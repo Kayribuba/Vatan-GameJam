@@ -4,7 +4,5 @@ using UnityEngine;
 
 public abstract class Features
 {
-    //sa naptýn
+    public static string[] RAM { get; private set; } = new string[] { "4 GB RAM", "8 GB RAM", "16 GB RAM", "32 GB RAM", "64 GB RAM", "128 GB RAM" };
 }
-
-public enum E_RAM { _4_GB, _8_GB, _16_GB, _32_GB, _64_GB, _128_GB }

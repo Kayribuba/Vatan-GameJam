@@ -4,21 +4,48 @@ using UnityEngine;
 
 public class ProductPopulator : MonoBehaviour
 {
-    List<IProductModel> AllProductsInTheScene = new List<IProductModel>();
+    List<GameObject> AllProductGOsInTheScene = new List<GameObject>();
 
-    void Start()
+    void Awake()
     {
-        GameObject[] LaptopsInScene = GameObject.FindGameObjectsWithTag(Constants.LaptopTag);
-        foreach(GameObject lgo in LaptopsInScene)
+        GameObject[] disposable1 = FindObjectsOfType<GameObject>();
+        foreach(GameObject go in disposable1)
         {
-            if (lgo.GetComponent<LaptopInfo>() == null)
-                lgo.AddComponent(typeof(LaptopInfo));
+            if (go.layer == LayerMask.NameToLayer(Constants.ProductLayerName))
+                AllProductGOsInTheScene.Add(go);
+        }
 
-            LaptopInfo lInfo = lgo.GetComponent<LaptopInfo>();
+        foreach (GameObject go in AllProductGOsInTheScene)
+        {
+            if (go.GetComponent<ProductInfo>() == null)
+                go.AddComponent(typeof(ProductInfo));
+            ProductInfo pm = go.GetComponent<ProductInfo>();
 
-            lInfo.RAM = (E_RAM)Random.Range(0,4);
+            pm.productName = go.name;
+            if(go.CompareTag(Constants.LaptopTag))
+            {
+                pm.productType = ProductType.Laptop;
+                pm.productPrice = 15000;
 
-            AllProductsInTheScene.Add(lInfo);
+                pm.features = new string[1];
+                pm.features[0] = Features.RAM[Random.Range(0, 4)];
+            }
+            else if (go.CompareTag(Constants.MonitorTag))
+            {
+                pm.productType = ProductType.Monitor;
+                pm.productPrice = 4000;
+
+                //pm.features = new string[0];
+                //özellikler buraa
+            }
+            else if(go.CompareTag(Constants.BilgisayarKasaTag))
+            {
+                pm.productType = ProductType.Kasa;
+                pm.productPrice = 30000;
+
+                pm.features = new string[1];
+                pm.features[0] = Features.RAM[Random.Range(0, 6)];
+            }
         }
     }
 }
