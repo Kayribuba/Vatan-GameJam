@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ProductType { Laptop, Monitor, Kasa}
+public enum ProductType { Laptop, Monitor, Kasa, UNKNOWN}
 
 public class ProductInfo : MonoBehaviour
 {

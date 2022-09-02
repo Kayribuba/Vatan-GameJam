@@ -46,6 +46,14 @@ public class ProductPopulator : MonoBehaviour
                 pm.features = new string[1];
                 pm.features[0] = Features.RAM[Random.Range(0, 6)];
             }
+            else
+            {
+                pm.productType = ProductType.UNKNOWN;
+                pm.productPrice = 0;
+
+                pm.features = new string[1];
+                pm.features[0] = Features.DebugMessages[0];
+            }
         }
     }
 }
