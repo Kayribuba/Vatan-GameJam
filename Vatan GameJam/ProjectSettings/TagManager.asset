@@ -7,6 +7,13 @@ TagManager:
   - Laptop
   - Monitor
   - BilgisayarKasa
+  - VacuumCleaner
+  - TV
+  - KeyBoard
+  - CellPhone
+  - Headphone
+  - Mouse
+  - Printer
   layers:
   - Default
   - TransparentFX

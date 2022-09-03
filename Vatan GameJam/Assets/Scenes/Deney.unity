@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 72776381}
   m_Layer: 14
   m_Name: 4
-  m_TagString: Laptop
+  m_TagString: VacuumCleaner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 144098668}
   m_Layer: 14
   m_Name: 7
-  m_TagString: Laptop
+  m_TagString: CellPhone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 285371437}
   m_Layer: 14
   m_Name: 3
-  m_TagString: Laptop
+  m_TagString: BilgisayarKasa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 499893190}
   m_Layer: 14
   m_Name: 9
-  m_TagString: Laptop
+  m_TagString: Mouse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 594795060}
   m_Layer: 14
   m_Name: 2
-  m_TagString: Laptop
+  m_TagString: Monitor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 769853623}
   m_Layer: 14
   m_Name: 1
-  m_TagString: Untagged
+  m_TagString: Laptop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2179,7 +2179,7 @@ GameObject:
   - component: {fileID: 1012478193}
   m_Layer: 14
   m_Name: 5
-  m_TagString: Laptop
+  m_TagString: TV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2421,7 +2421,7 @@ GameObject:
   - component: {fileID: 1155811264}
   m_Layer: 14
   m_Name: 6
-  m_TagString: Laptop
+  m_TagString: KeyBoard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3502,6 +3502,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 1032
       objectReference: {fileID: 0}
+    - target: {fileID: 1333945096, guid: 9a64db73e134e484396365b87dccf8da, type: 3}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1764769425, guid: 9a64db73e134e484396365b87dccf8da, type: 3}
       propertyPath: m_fontStyle
       value: 0
@@ -3679,7 +3683,7 @@ GameObject:
   - component: {fileID: 2003031959}
   m_Layer: 14
   m_Name: 10
-  m_TagString: Laptop
+  m_TagString: Printer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3777,7 +3781,7 @@ GameObject:
   - component: {fileID: 2009784475}
   m_Layer: 14
   m_Name: 8
-  m_TagString: Laptop
+  m_TagString: Headphone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
