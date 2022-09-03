@@ -2388,6 +2388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b732e29435c2244b8526ad6b0941c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AllProducts: []
+  NumberOfItemsToSelect: 5
 --- !u!4 &1128358671
 Transform:
   m_ObjectHideFlags: 0

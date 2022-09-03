@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class ProductPopulator : MonoBehaviour
 {
-    List<GameObject> AllProductGOsInTheScene = new List<GameObject>();
+    public List<ProductInfo> AllProducts = new List<ProductInfo>();
+
+    [SerializeField] int NumberOfItemsToSelect = 15;
+    public List<ProductInfo> SelectedProducts { get; private set; } = new List<ProductInfo>();
 
     void Awake()
     {
+        List<GameObject> AllProductGOsInTheScene = new List<GameObject>();
+
         GameObject[] disposable1 = FindObjectsOfType<GameObject>();
         foreach(GameObject go in disposable1)
         {
@@ -115,6 +120,25 @@ public class ProductPopulator : MonoBehaviour
                 pm.features = new string[1];
                 pm.features[0] = Features.DebugMessages[0];
             }
+
+            AllProducts.Add(pm);
+        }
+
+        List<int> usedNumbers = new List<int>();
+        for(int i = 0; i < NumberOfItemsToSelect; i++)
+        {
+            int randomNumber = -1;
+            while (true)
+            {
+                randomNumber = Random.Range(0, AllProducts.Count);
+                if(!usedNumbers.Contains(randomNumber))
+                {
+                    usedNumbers.Add(randomNumber);
+                    break;
+                }
+            }
+
+            SelectedProducts.Add(AllProducts[randomNumber]);
         }
     }
     void SetFeatures(ref string[] pmFeatures, string[][] setTo)
