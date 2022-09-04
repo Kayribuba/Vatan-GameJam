@@ -38,8 +38,6 @@ public class TabletScript : MonoBehaviour
         textMesh.text += "<b>Type : </b>" + e.productType + "<br><br>";
         textMesh.text += e.productPrice +" TL"+ "<br><br><b><size=120%><align=\"center\">FEATURES</align><size=100%></b><br>";
 
-        Debug.Log(canvas.scaleFactor);
-
         if (e.features == null)
             textMesh.text += "<br><NONE>";
         else

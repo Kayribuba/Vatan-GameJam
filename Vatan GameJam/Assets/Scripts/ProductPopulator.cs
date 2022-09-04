@@ -9,8 +9,15 @@ public class ProductPopulator : MonoBehaviour
     [SerializeField] int NumberOfItemsToSelect = 15;
     public List<ProductInfo> SelectedProducts { get; private set; } = new List<ProductInfo>();
 
+    List<string> usedCodes = new List<string>();
+    int DolarTlKuru;
+    int priceMultiplier = 1;
+
     void Awake()
     {
+        int disposable2 = Random.Range(1, 101);
+        DolarTlKuru = disposable2 == 31 ? Random.Range(1, 10) : Random.Range(10, 21);//100de 1 ihtimal dolar kuru 10 tlden düþük olucak
+
         List<GameObject> AllProductGOsInTheScene = new List<GameObject>();
 
         GameObject[] disposable1 = FindObjectsOfType<GameObject>();
@@ -27,13 +34,14 @@ public class ProductPopulator : MonoBehaviour
             ProductInfo pm = go.GetComponent<ProductInfo>();
 
             pm.productName = go.name;
-            if(go.CompareTag(Constants.LaptopTag))
+            string[][] UseThese = null;
+            if (go.CompareTag(Constants.LaptopTag))
             {
                 pm.productType = ProductType.Laptop;
-                pm.productPrice = 15000;
+                priceMultiplier = 10;
 
-                string[][] UseThese = new string[4][] { Features.LaptopGraphicsCard, Features.LaptopProcessor, Features.LaptopRAM, Features.LaptopStorageSpace };
-                SetFeatures(ref pm.features, UseThese);
+                UseThese = new string[4][] { Features.LaptopGraphicsCard, Features.LaptopProcessor, Features.LaptopRAM, Features.LaptopStorageSpace };
+
                 //pm.features = new string[4];
                 //pm.features[0] = GetRandomStringFromArray(Features.LaptopGraphicsCard);
                 //pm.features[1] = GetRandomStringFromArray(Features.LaptopGraphicsCard);
@@ -43,74 +51,65 @@ public class ProductPopulator : MonoBehaviour
             else if (go.CompareTag(Constants.MonitorTag))
             {
                 pm.productType = ProductType.Monitor;
-                pm.productPrice = 4000;
+                priceMultiplier = 7;
 
-                string[][] UseThese = new string[][] { Features.MonitorScreenSize, Features.ScreenResolution, Features.MonitorRefreshRate };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.MonitorScreenSize, Features.ScreenResolution, Features.MonitorRefreshRate };
             }
             else if(go.CompareTag(Constants.BilgisayarKasaTag))
             {
                 pm.productType = ProductType.Kasa;
-                pm.productPrice = 30000;
+                priceMultiplier = 12;
 
-                string[][] UseThese = new string[][] { Features.LaptopProcessor, Features.RAM, Features.LaptopStorageSpace };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.LaptopProcessor, Features.RAM, Features.LaptopStorageSpace };
             }
             else if (go.CompareTag(Constants.VacuumCleanerTag))
             {
                 pm.productType = ProductType.VacuumCleaner;
-                pm.productPrice = 5000;
+                priceMultiplier = 5;
 
-                string[][] UseThese = new string[][] { Features.DirtCapacity, Features.VacuumCleanerWeight, Features.SuctionPower };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.DirtCapacity, Features.VacuumCleanerWeight, Features.SuctionPower };
             }
             else if (go.CompareTag(Constants.TVTag))
             {
                 pm.productType = ProductType.TV;
-                pm.productPrice = 5500;
+                priceMultiplier = 9;
 
-                string[][] UseThese = new string[][] { Features.TVScreenSize, Features.ScreenResolution, Features.SatelliteReceiver };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.TVScreenSize, Features.ScreenResolution, Features.SatelliteReceiver };
             }
             else if (go.CompareTag(Constants.KeyBoardTag))
             {
                 pm.productType = ProductType.Keyboard;
-                pm.productPrice = 1250;
+                priceMultiplier = 4;
 
-                string[][] UseThese = new string[][] { Features.Switch, Features.KeyboardWeight, Features.BackLit };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.Switch, Features.KeyboardWeight, Features.BackLit };
             }
             else if (go.CompareTag(Constants.CellPhoneTag))
             {
                 pm.productType = ProductType.Cellphone;
-                pm.productPrice = 3500;
+                priceMultiplier = 8;
 
-                string[][] UseThese = new string[][] { Features.CellPhoneStorageSpace, Features.CellPhoneMemory, Features.CellPhoneWeight };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.CellPhoneStorageSpace, Features.CellPhoneMemory, Features.CellPhoneWeight };
             }
             else if (go.CompareTag(Constants.HeadphoneTag))
             {
                 pm.productType = ProductType.Headphone;
-                pm.productPrice = 930;
+                priceMultiplier = 3;
 
-                string[][] UseThese = new string[][] { Features.HeadPhoneWeight, Features.ConnectionType, Features.Microphone };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.HeadPhoneWeight, Features.ConnectionType, Features.Microphone };
             }
             else if (go.CompareTag(Constants.MouseTag))
             {
                 pm.productType = ProductType.Mouse;
-                pm.productPrice = 331;
+                priceMultiplier = 2;
 
-                string[][] UseThese = new string[][] { Features.NumberOfMouseButtons, Features.MouseWeight, Features.ConnectionType };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.NumberOfMouseButtons, Features.MouseWeight, Features.ConnectionType };
             }
             else if (go.CompareTag(Constants.PrinterTag))
             {
                 pm.productType = ProductType.Printer;
-                pm.productPrice = 6452;
+                priceMultiplier = 6;
 
-                string[][] UseThese = new string[][] { Features.PrinterSpeed, Features.PrinterWeight, Features.PrinterResolution };
-                SetFeatures( ref pm.features, UseThese);
+                UseThese = new string[][] { Features.PrinterSpeed, Features.PrinterWeight, Features.PrinterResolution };
             }
             else
             {
@@ -120,6 +119,11 @@ public class ProductPopulator : MonoBehaviour
                 pm.features = new string[1];
                 pm.features[0] = Features.DebugMessages[0];
             }
+
+            if (UseThese != null)
+                SetFeaturesAndPrice(ref pm, UseThese);
+
+            pm.productPrice *= priceMultiplier;
 
             AllProducts.Add(pm);
         }
@@ -141,11 +145,48 @@ public class ProductPopulator : MonoBehaviour
             SelectedProducts.Add(AllProducts[randomNumber]);
         }
     }
-    void SetFeatures(ref string[] pmFeatures, string[][] setTo)
-    {
-        pmFeatures = new string[setTo.Length];
 
-        for (int i = 0; i < pmFeatures.Length; i++)
-            pmFeatures[i] = setTo[i][Random.Range(0, setTo[i].Length)];
+    void SetFeaturesAndPrice(ref ProductInfo pm, string[][] setTo)
+    {
+        pm.features = new string[setTo.Length];
+        float price = 0;
+
+        int tries = 0;
+        while (true)
+        {
+            string code = pm.productType.ToString();
+            List<int> randomNumbers = new List<int>();
+            for (int i = 0; i < pm.features.Length; i++)
+            {
+                int randomNumber = Random.Range(0, setTo[i].Length);
+                randomNumbers.Add(randomNumber);
+                code += randomNumber;
+            }
+            if (!usedCodes.Contains(code))
+            {
+                for (int i = 0; i < randomNumbers.Count; i++)
+                {
+                    pm.features[i] = setTo[i][randomNumbers[i]];
+                    price += KayribubasThings.primeNumbers[randomNumbers[i]] * DolarTlKuru * Random.Range(2f, 3f);
+                }
+                break;
+            }
+
+            tries++;
+            if (tries >= 400)
+            {
+                Debug.Log($"<ERROR - Setting random features to {pm.name} has failed after {tries} tries.>");
+                for (int i = 0; i < pm.features.Length; i++)
+                {
+                    int randomNumber = Random.Range(0, setTo[i].Length);
+                    pm.features[i] = setTo[i][randomNumber];
+                    price += KayribubasThings.primeNumbers[randomNumber] * DolarTlKuru * Random.Range(2f, 3f);
+                }
+                break;
+            }
+        }
+
+        price /= setTo.Length;
+        pm.productPrice = (int)Mathf.Ceil(price);
     }
 }

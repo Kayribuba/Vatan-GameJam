@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Features
 {
     //LAPTOP
-    public static string[] LaptopRAM { get; private set; } = new string[] { "8 GB RAM", "16 GB RAM", "32 GB RAM", "64 GB RAM" };
+    public static string[] LaptopRAM { get; private set; } = new string[] { "8 GB RAM" , "16 GB RAM", "32 GB RAM", "64 GB RAM" };
     public static string[] RAM { get; private set; } = new string[] { "8 GB RAM", "16 GB RAM", "32 GB RAM", "64 GB RAM", "128 GB RAM" };
     public static string[] LaptopStorageSpace { get; private set; } = new string[] { "256 GB Storage Space", "512 GB Storage Space", "1024 GB Storage Space", "2056 GB Storage Space" };
     public static string[] LaptopGraphicsCard { get; private set; } = new string[] { "1650 Graphics Card", "1650ti Graphics Card", "3050 Graphics Card", "3050ti Graphics Card", "3060 Graphics Card", "3070 Graphics Card", "3080 Graphics Card" };
