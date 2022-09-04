@@ -465,7 +465,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.002635, y: 0.000121}
-  m_SizeDelta: {x: 695.06177, y: 1032.5525}
+  m_SizeDelta: {x: 695, y: 1032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1143192296
 Canvas:
@@ -850,7 +850,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1058,9 +1058,10 @@ GameObject:
   m_Component:
   - component: {fileID: 988094935929682624}
   - component: {fileID: 988094935929682627}
+  - component: {fileID: 7787486447368825083}
+  - component: {fileID: 1852747349}
   - component: {fileID: 988094935929682626}
   - component: {fileID: 988094935929682625}
-  - component: {fileID: 1852747349}
   m_Layer: 0
   m_Name: FPSCamera
   m_TagString: Untagged
@@ -1098,6 +1099,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerT: {fileID: 988094935399460825}
   mouseSensitivity: 200
+--- !u!114 &7787486447368825083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988094935929682639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c703818f4a732347b849925c9e9f178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kamera: {fileID: 0}
+  LayersToSee:
+    serializedVersion: 2
+    m_Bits: 0
+  reach: 10
+  showRaycast: 0
+--- !u!114 &1852747349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988094935929682639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133aa7cafe622cf4a96ffaab3fa58226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kamera: {fileID: 988094935929682626}
+  LayersToSee:
+    serializedVersion: 2
+    m_Bits: 16384
+  crossHair: {fileID: 228661464}
+  reach: 6
+  showRaycast: 1
 --- !u!20 &988094935929682626
 Camera:
   m_ObjectHideFlags: 0
@@ -1149,25 +1187,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988094935929682639}
   m_Enabled: 1
---- !u!114 &1852747349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988094935929682639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133aa7cafe622cf4a96ffaab3fa58226, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kamera: {fileID: 988094935929682626}
-  LayersToSee:
-    serializedVersion: 2
-    m_Bits: 16384
-  crossHair: {fileID: 228661464}
-  reach: 6
-  showRaycast: 1
 --- !u!1001 &97801767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1369,4 +1388,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMesh: {fileID: 1764769425}
-  animator: {fileID: 0}
+  canvas: {fileID: 1143192296}
+  animator: {fileID: 338332583}

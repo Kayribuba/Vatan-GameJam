@@ -1,26 +1,20 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Animations;
 
-public class BarcodeReaderScript : MonoBehaviour
+public class TalkToEmployee : MonoBehaviour
 {
-    public event EventHandler<ProductInfo> SetProductEvent;
-
     [Header("Reference")]
     [SerializeField] Camera kamera;
     [SerializeField] LayerMask LayersToSee;
-    [SerializeField] Canvas crossHair;
 
     [Header("Variable")]
-    [SerializeField] float reach = 10f;
+    [SerializeField] float reach = 5f;
 
     [Header("Option")]
     [SerializeField] bool showRaycast;
 
     Ray ray;
-    ProductInfo productInfo;
     bool isSeeingLayers;
 
     void Start()
@@ -35,30 +29,22 @@ public class BarcodeReaderScript : MonoBehaviour
         Physics.Raycast(ray, out hitInfo, reach, LayersToSee);//---Kameradan Ray Cast'lendi---
 
         isSeeingLayers = hitInfo.collider != null;
-        crossHair.enabled = isSeeingLayers;
 
-        if (isSeeingLayers)//---Hedeflenen ürün raycast'e yakalandý---
+        if (isSeeingLayers)//---adam raycast'e yakalandý---
         {
-            ProductInfo newProductInfo = hitInfo.transform.GetComponent<ProductInfo>();
-
-            if (newProductInfo != productInfo)//---Yeni birþey yakalandý---
+            if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
             {
-                productInfo = newProductInfo;
-
-                SetProductEvent?.Invoke(this, productInfo);//---Event yoluyla yollandý---
+                Debug.Log("sa beybi lets go parti");
+                //Diyalog çalýþtýr
             }
-
-            if (crossHair != null)
-                crossHair.transform.position = hitInfo.point;
         }
     }
-
     void OnDrawGizmos()
     {
         if (showRaycast)
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawSphere(ray.GetPoint(reach), .05f);
+            Gizmos.color = Color.green;
+            Gizmos.DrawCube(ray.GetPoint(reach), new Vector3(.1f, .1f, .1f));
             Gizmos.DrawLine(ray.origin, ray.origin + ray.direction * reach);
         }
     }
