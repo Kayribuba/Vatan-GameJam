@@ -20,11 +20,11 @@ public abstract class Features
     public static string[] MonitorRefreshRate { get; private set; } = new string[] { "120Hz Refresh Rate", "144Hz Refresh Rate", "165Hz Refresh Rate", "240Hz Refresh Rate" };
     //TV
     public static string[] TVScreenSize { get; private set; } = new string[] { "32\" Screen Size", "43\" Screen Size", "50\" Screen Size", "65\" Screen Size" };
-    public static string[] SatelliteReceiver { get; private set; } = new string[] { "<size=65%>Doesn't have a Satellite Receiver<size=100%>", "<size=72%>Does have a Satellite Receiver<size=100%>" };//KÜÇÜLT(65,72)
+    public static string[] SatelliteReceiver { get; private set; } = new string[] { "one Satellite Receiver", "No Receiver available" };
     //KEYBOARD
-    public static string[] Switch { get; private set; } = new string[] { "Red Switch", "Brown Switch", "Blue Switch", "Non-Mechanical" }; 
+    public static string[] Switch { get; private set; } = new string[] { "Red Switch", "Brown Switch", "Blue Switch", "Non-Mechanical Keys" }; 
     public static string[] KeyboardWeight { get; private set; } = new string[] { "0.6 kg weight", "0.8 kg weight", "1 kg weight", "1.2 kg weight" }; 
-    public static string[] BackLit { get; private set; } = new string[] { "Not Backlit", "Backlit" };
+    public static string[] BackLit { get; private set; } = new string[] { "No Backlit keys available", "Backlit keys" };
     //CELLPHONE
     public static string[] CellPhoneStorageSpace { get; private set; } = new string[] { "64 GB Storage Space", "128 GB Storage Space", "256 GB Storage Space" };
     public static string[] CellPhoneMemory { get; private set; } = new string[] { "4 GB Memory", "6 GB Memory", "8 GB Memory", "10 GB Memory" };
@@ -32,7 +32,7 @@ public abstract class Features
     //HEADPHONE
     public static string[] HeadPhoneWeight { get; private set; } = new string[] { "153 gr weight", "180 gr weight", "255 gr weight", "353 gr weight" };
     public static string[] ConnectionType { get; private set; } = new string[] { "Wireless Connection", "Wired Connection", "Bluetooth Connection" };
-    public static string[] Microphone { get; private set; } = new string[] { "<size=86%>Doesn't have a Microphone<size=100%>", "Does have a Microphone" };//ÝLKÝNÝ KÜÇÜLT(86)
+    public static string[] Microphone { get; private set; } = new string[] { "one Microphone", "No Microphone available" };
     //MOUSE
     public static string[] NumberOfMouseButtons { get; private set; } = new string[] { "3 Buttons", "4 Buttons", "5 Buttons", "6 Buttons" };
     public static string[] MouseWeight { get; private set; } = new string[] { "57 gr weight", "65 gr weight", "85 gr weight", "126 gr weight", "215 gr weight" };

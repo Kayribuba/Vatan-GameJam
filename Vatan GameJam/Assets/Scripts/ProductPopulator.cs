@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ProductPopulator : MonoBehaviour
 {
-    public List<ProductInfo> AllProducts = new List<ProductInfo>();
+    [HideInInspector] public List<ProductInfo> AllProducts = new List<ProductInfo>();
+    [HideInInspector] public List<EmployeeScript> EmployeesInScene = new List<EmployeeScript>();
+    [HideInInspector] public List<ProductInfo> SelectedProducts { get; private set; } = new List<ProductInfo>();
 
     [SerializeField] int NumberOfItemsToSelect = 15;
-    public List<ProductInfo> SelectedProducts { get; private set; } = new List<ProductInfo>();
 
     List<string> usedCodes = new List<string>();
     int DolarTlKuru;
@@ -25,6 +26,12 @@ public class ProductPopulator : MonoBehaviour
         {
             if (go.layer == LayerMask.NameToLayer(Constants.ProductLayerName))
                 AllProductGOsInTheScene.Add(go);
+            else if (go.layer == LayerMask.NameToLayer(Constants.EmployeeLayerName))
+            {
+                if (go.GetComponent<EmployeeScript>() == null)
+                    go.AddComponent(typeof(EmployeeScript));
+                EmployeesInScene.Add(go.GetComponent<EmployeeScript>());
+            }
         }
 
         foreach (GameObject go in AllProductGOsInTheScene)
@@ -64,7 +71,7 @@ public class ProductPopulator : MonoBehaviour
             }
             else if (go.CompareTag(Constants.VacuumCleanerTag))
             {
-                pm.productType = ProductType.VacuumCleaner;
+                pm.productType = ProductType.Vacuum_Cleaner;
                 priceMultiplier = 5;
 
                 UseThese = new string[][] { Features.DirtCapacity, Features.VacuumCleanerWeight, Features.SuctionPower };
@@ -128,6 +135,28 @@ public class ProductPopulator : MonoBehaviour
             AllProducts.Add(pm);
         }
 
+
+        if(EmployeesInScene.Count > NumberOfItemsToSelect)
+        {
+            if (EmployeesInScene.Count > AllProducts.Count)
+            {
+                int excess = EmployeesInScene.Count - AllProducts.Count;
+                for(int i = 0; i < excess; i++)
+                {
+                    EmployeeScript employeeTOKILL = EmployeesInScene[EmployeesInScene.Count - 1];
+                    EmployeesInScene.RemoveAt(EmployeesInScene.Count - 1);
+                    Destroy(employeeTOKILL.gameObject);
+                }
+                Debug.Log($"The excess of employees have been destroyed (total of {excess})");
+            }
+
+            NumberOfItemsToSelect = EmployeesInScene.Count;
+        }
+        else if (EmployeesInScene.Count < NumberOfItemsToSelect)
+        {
+            NumberOfItemsToSelect = EmployeesInScene.Count;
+        }
+
         List<int> usedNumbers = new List<int>();
         for(int i = 0; i < NumberOfItemsToSelect; i++)
         {
@@ -143,7 +172,11 @@ public class ProductPopulator : MonoBehaviour
             }
 
             SelectedProducts.Add(AllProducts[randomNumber]);
+            EmployeesInScene[i].SetProduct(AllProducts[randomNumber]);
         }
+
+
+
     }
 
     void SetFeaturesAndPrice(ref ProductInfo pm, string[][] setTo)

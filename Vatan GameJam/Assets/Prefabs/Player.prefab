@@ -1116,6 +1116,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   reach: 10
+  nextInputWaitTime: 0.5
   showRaycast: 0
 --- !u!114 &1852747349
 MonoBehaviour:

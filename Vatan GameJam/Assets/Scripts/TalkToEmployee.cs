@@ -10,18 +10,33 @@ public class TalkToEmployee : MonoBehaviour
 
     [Header("Variable")]
     [SerializeField] float reach = 5f;
+    [SerializeField] float nextInputWaitTime = .5f;
 
     [Header("Option")]
     [SerializeField] bool showRaycast;
 
+    DialogueManager DM;
     Ray ray;
+    float cooldown;
     bool isSeeingLayers;
+    bool isPlayerInDialogue;
 
     void Start()
     {
+        DM = DialogueManager.OnlyDialogueManager;
+        if (DM != null)
+            DM.DialogueStartedEvent += OnlyDM_DialogueStartedEvent1;
+
         if (kamera == null && gameObject.GetComponent<Camera>() != null)
             kamera = gameObject.GetComponent<Camera>();
     }
+
+    void OnlyDM_DialogueStartedEvent1(object sender, bool e)
+    {
+        isPlayerInDialogue = e;
+        cooldown = Time.time + nextInputWaitTime;
+    }
+
     void Update()
     {
         RaycastHit hitInfo;
@@ -30,12 +45,16 @@ public class TalkToEmployee : MonoBehaviour
 
         isSeeingLayers = hitInfo.collider != null;
 
-        if (isSeeingLayers)//---adam raycast'e yakalandý---
+        if (isSeeingLayers && hitInfo.collider.GetComponent<EmployeeScript>() != null)//---adam raycast'e yakalandý---
         {
-            if(Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
+            EmployeeScript ESInRaycast = hitInfo.collider.gameObject.GetComponent<EmployeeScript>();
+
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
             {
-                Debug.Log("sa beybi lets go parti");
-                //Diyalog çalýþtýr
+                if(!isPlayerInDialogue && cooldown <= Time.time)
+                {
+                    DM.StartDialogue(ESInRaycast);
+                }
             }
         }
     }
