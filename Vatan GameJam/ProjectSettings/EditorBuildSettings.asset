@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Deney.unity
+    guid: fe2c5e38628e1fb4c90ad1c9f83a27d5
+  - enabled: 1
+    path: Assets/Scenes/CompetitionScene.unity
+    guid: 037efb323dd93394894fba860e48c039
   m_configObjects: {}

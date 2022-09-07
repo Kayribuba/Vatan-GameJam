@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Constants
 {
+    public static string PlayerTag { get; private set; } = "Player";
     public static string ProductLayerName { get; private set; } = "Product";
     public static string EmployeeLayerName { get; private set; } = "Employee";
     public static string LaptopTag { get; private set; } = "Laptop";
