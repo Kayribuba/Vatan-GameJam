@@ -128,7 +128,10 @@ public class ProductPopulator : MonoBehaviour
             }
 
             if (UseThese != null)
+            {
+                //Debug.Log(UseThese.Length);
                 SetFeaturesAndPrice(ref pm, UseThese);
+            }
 
             pm.productPrice *= priceMultiplier;
 
@@ -174,9 +177,6 @@ public class ProductPopulator : MonoBehaviour
             SelectedProducts.Add(AllProducts[randomNumber]);
             EmployeesInScene[i].SetProduct(AllProducts[randomNumber]);
         }
-
-
-
     }
 
     void SetFeaturesAndPrice(ref ProductInfo pm, string[][] setTo)

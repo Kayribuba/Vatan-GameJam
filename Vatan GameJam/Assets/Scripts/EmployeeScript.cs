@@ -31,7 +31,7 @@ public class EmployeeScript : MonoBehaviour
         {
             string feature = "I can tell you that the product has ";
 
-            if (givenProduct.features.Length <= 0)
+            if (givenProduct == null || givenProduct.features.Length <= 0)
                 feature = "It has no features lol";
             else
             {
