@@ -4114,6 +4114,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 296846591033245316, guid: 6d700b30615382944883b0575ed01939, type: 3}
+      propertyPath: InfoCarrier
+      value: 
+      objectReference: {fileID: 7610286106806914452, guid: 3a96febb0a84586479d90b588d37ea81, type: 3}
+    - target: {fileID: 296846591033245316, guid: 6d700b30615382944883b0575ed01939, type: 3}
+      propertyPath: infoCarrierObject
+      value: 
+      objectReference: {fileID: 7610286106806914452, guid: 3a96febb0a84586479d90b588d37ea81, type: 3}
     - target: {fileID: 296846591033245317, guid: 6d700b30615382944883b0575ed01939, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4231,6 +4239,10 @@ PrefabInstance:
     - target: {fileID: 8709869402927500883, guid: 6972fb65eaec4b94384617ddd4ac9e26, type: 3}
       propertyPath: m_Name
       value: GameManagerGO
+      objectReference: {fileID: 0}
+    - target: {fileID: 8709869402927500908, guid: 6972fb65eaec4b94384617ddd4ac9e26, type: 3}
+      propertyPath: TimeToElapse
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8709869402927500910, guid: 6972fb65eaec4b94384617ddd4ac9e26, type: 3}
       propertyPath: m_RootOrder
