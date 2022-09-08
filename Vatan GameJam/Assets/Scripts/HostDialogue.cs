@@ -94,15 +94,6 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
                         lockAnswer = true;
                         //cevap iste
 
-                        while (true)
-                        {
-                            Debug.Log(numpadIndex);
-                            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-                            { }
-                            else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-                            { }
-                        }
-
                     }
                     textMesh.text = sentence;
                     cooldown = Time.time + nextInputWaitTime;
