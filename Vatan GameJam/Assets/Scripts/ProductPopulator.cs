@@ -9,6 +9,7 @@ public class ProductPopulator : MonoBehaviour
     [HideInInspector] public List<ProductInfo> SelectedProducts { get; private set; } = new List<ProductInfo>();
 
     [SerializeField] int NumberOfItemsToSelect = 15;
+    [SerializeField] GameObject infoCarrierObject;
 
     List<string> usedCodes = new List<string>();
     int DolarTlKuru;
@@ -177,6 +178,14 @@ public class ProductPopulator : MonoBehaviour
             SelectedProducts.Add(AllProducts[randomNumber]);
             EmployeesInScene[i].SetProduct(AllProducts[randomNumber]);
         }
+
+        InfoCarrierr[] infos = FindObjectsOfType<InfoCarrierr>();
+        foreach (InfoCarrierr ic in infos)
+            Destroy(ic.gameObject);
+
+        GameObject GOForInfo = new GameObject("INFO");
+        GOForInfo.AddComponent(typeof(InfoCarrierr));
+        GOForInfo.GetComponent<InfoCarrierr>().SetInfo(SelectedProducts.ToArray());
     }
 
     void SetFeaturesAndPrice(ref ProductInfo pm, string[][] setTo)
