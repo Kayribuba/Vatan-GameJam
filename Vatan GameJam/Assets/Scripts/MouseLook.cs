@@ -17,6 +17,9 @@ public class MouseLook : MonoBehaviour
 
         if (DialogueManager.OnlyDialogueManager != null)
             DialogueManager.OnlyDialogueManager.DialogueStartedEvent += OnlyDialogueManager_DialogueStartedEvent;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void OnlyDialogueManager_DialogueStartedEvent(object sender, bool e)

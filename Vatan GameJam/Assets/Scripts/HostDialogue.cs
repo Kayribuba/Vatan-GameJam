@@ -6,7 +6,9 @@ using TMPro;
 public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
 {
     [SerializeField] TextMeshProUGUI textMesh;
+    [SerializeField] TextMeshProUGUI NumTakerDigitalText;
     [SerializeField] float nextInputWaitTime = .2f;
+    [SerializeField] GameObject NumTaker;
  
     Queue<string> DialogueQueue = new Queue<string>();
     float cooldown = float.MaxValue;
@@ -16,11 +18,17 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
     string[][] Features;
     int[] Prices;
 
-    int numpadIndex = 0;
     bool lockAnswer;
+    bool acceptAnswer;
+    int currentAnswer = -1;
+    int pricesIndex;
+    bool OneTimeEnterPass;
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         if (Types != null)
         {
             DialogueQueue.Enqueue("And now ladies and gentlemen we are here with our last contestant.");
@@ -62,7 +70,7 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
                 DialogueQueue.Enqueue("So... What's it's price?<br>(Click then give your answer)");
                 DialogueQueue.Enqueue("(a " + Types[i].ToString() + " with " + sentence + ")<GetAnswer>");//<GetAnswer> aþaðýda updatede siliniyo ve cevap isteniyo
 
-                DialogueQueue.Enqueue("You gave your answer.");
+                DialogueQueue.Enqueue("You chose your answer to be <CurrentAnswer>TL.");
             }
             DialogueQueue.Enqueue("And that concludes your turn!");
 
@@ -80,8 +88,10 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
     {
         if (!lockAnswer)
         {
-            if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E)) && cooldown <= Time.time)
+            if (((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E)) && cooldown <= Time.time) || OneTimeEnterPass)
             {
+                OneTimeEnterPass = false;
+
                 if (DialogueQueue.Count > 0)
                 {
                     string sentence = "";
@@ -92,21 +102,86 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
                         sentence = sentence.Replace("<GetAnswer>", "");
 
                         lockAnswer = true;
-                        //cevap iste
-
+                        acceptAnswer = true;
+                        currentAnswer = -1;
+                        NumTaker.SetActive(true);
+                    }
+                    else if(sentence.Contains("<CurrentAnswer>") && Prices.Length > pricesIndex - 1)
+                    {
+                        sentence = sentence.Replace("<CurrentAnswer>", Prices[pricesIndex - 1].ToString());
                     }
                     textMesh.text = sentence;
                     cooldown = Time.time + nextInputWaitTime;
                 }
+                else
+                {
+                    //bitir lan hakem BÝTÝÝÝR ÇAL DÜDÜÐÜ HAKEEEEEEEEEAAM
+                }
             }
+        }
+        if(acceptAnswer)
+        {
+            if (currentAnswer >= 0 && currentAnswer < 100000)
+            {
+                NumTakerDigitalText.text = currentAnswer.ToString();
+            }
+            else
+                NumTakerDigitalText.text = "";
         }
     }
 
+    public void SetAnswer(int numToAdd)
+    {
+        if (acceptAnswer)
+        {
+            string textVersion = currentAnswer.ToString();
+
+            if (currentAnswer < 0)
+                textVersion = "";
+
+            textVersion += numToAdd.ToString();
+            int targetAnswer = System.Convert.ToInt32(textVersion);
+
+            if (targetAnswer <= 99999)
+                currentAnswer = targetAnswer;
+
+        }
+    }
+    public void DeleteCurrentAnswersLastNumber()
+    {
+        if (acceptAnswer)
+        {
+            string textVersion = currentAnswer.ToString();
+
+            if(currentAnswer > 9)
+            {
+                textVersion = textVersion.Substring(0, textVersion.Length - 1);
+                int targetAnswer = System.Convert.ToInt32(textVersion);
+                currentAnswer = targetAnswer;
+            }
+            else
+                currentAnswer = -1;
+        }
+    }
+    public void ConcludeAnswer()
+    {
+        if (currentAnswer >= 0 && currentAnswer < 100000 && acceptAnswer)
+        {
+            Prices[pricesIndex] = currentAnswer;
+            pricesIndex++;
+
+            lockAnswer = false;
+            acceptAnswer = false;
+            currentAnswer = -1;
+            NumTaker.SetActive(false);
+            OneTimeEnterPass = true;
+        }
+    }
     public void SetInfo(string[] types, string[] names, string[][] features, int[] prices)
     {
         Types = types;
         Names = names;
         Features = features;
-        Prices = prices;
+        Prices = new int[prices.Length];
     }
 }
