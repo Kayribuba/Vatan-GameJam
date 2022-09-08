@@ -152,7 +152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 36902485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e16dc57f11ef84baad6f140c84cf6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 65defa7ae7ca7e64082312b7e3942645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textMesh: {fileID: 1194514030}
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello everyone and welcome to Price is Right!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

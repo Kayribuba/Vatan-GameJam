@@ -186,6 +186,7 @@ public class ProductPopulator : MonoBehaviour
         GameObject GOForInfo = new GameObject("INFO");
         GOForInfo.AddComponent(typeof(InfoCarrierr));
         GOForInfo.GetComponent<InfoCarrierr>().SetInfo(SelectedProducts.ToArray());
+        DontDestroyOnLoad(GOForInfo);
     }
 
     void SetFeaturesAndPrice(ref ProductInfo pm, string[][] setTo)
