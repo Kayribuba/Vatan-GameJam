@@ -6,6 +6,8 @@ using TMPro;
 
 public class sinematikgec : MonoBehaviour
 {
+    [SerializeField] string doyouwattoskip = "Press and hold ESC to quit to start menu";
+    [SerializeField] string skipping = $"<color=\"red\">Skipping<color=\"white\">";
     [SerializeField] TextMeshProUGUI skippingText;
     [SerializeField] float waitTime = 3f;
     float targetTime = float.MaxValue;
@@ -20,12 +22,12 @@ public class sinematikgec : MonoBehaviour
         if(Input.GetKeyUp(KeyCode.Escape))
         {
             targetTime = float.MaxValue;
-            skippingText.text = "Press and hold ESC to skip...";
+            skippingText.text = doyouwattoskip;
         }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             targetTime = Time.time + waitTime;
-            skippingText.text = $"<color=\"red\">Skipping<color=\"white\">";
+            skippingText.text = skipping;
         }
 
         if(targetTime <= Time.time)

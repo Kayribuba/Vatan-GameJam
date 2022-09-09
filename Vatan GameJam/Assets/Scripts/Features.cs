@@ -16,7 +16,7 @@ public abstract class Features
     public static string[] SuctionPower { get; private set; } = new string[] { "250 W Suction Power", "300 W Suction Power", "350 W Suction Power", "400 W Suction Power", "450 W Suction Power" };
     //MONITOR
     public static string[] MonitorScreenSize { get; private set; } = new string[] { "24.5\" Screen Size" , "27\" Screen Size" , "32\" Screen Size" };
-    public static string[] ScreenResolution { get; private set; } = new string[] { "1920X10810 Resolution", "2560X1440 Resolution", "3840X2160 Resolution" };
+    public static string[] ScreenResolution { get; private set; } = new string[] { "1920X1080 Resolution", "2560X1440 Resolution", "3840X2160 Resolution" };
     public static string[] MonitorRefreshRate { get; private set; } = new string[] { "120Hz Refresh Rate", "144Hz Refresh Rate", "165Hz Refresh Rate", "240Hz Refresh Rate" };
     //TV
     public static string[] TVScreenSize { get; private set; } = new string[] { "32\" Screen Size", "43\" Screen Size", "50\" Screen Size", "65\" Screen Size" };

@@ -5,7 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class RunAudioPlayer : MonoBehaviour
 {
+    [SerializeField] AudioClip clip;
     AudioSource AuSo;
+    bool ended;
 
     private void Awake()
     {
@@ -14,6 +16,13 @@ public class RunAudioPlayer : MonoBehaviour
 
     public void EndTime()
     {
-
+        if (!ended)
+        {
+            AuSo.Stop();
+            AuSo.clip = this.clip;
+            AuSo.loop = false;
+            AuSo.Play();
+            ended = true;
+        }
     }
 }

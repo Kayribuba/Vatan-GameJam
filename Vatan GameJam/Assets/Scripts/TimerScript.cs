@@ -60,4 +60,13 @@ public class TimerScript : MonoBehaviour
         if(GameMangaerScript.OnlyGameManagerScript != null)
             GameMangaerScript.OnlyGameManagerScript.SetEndSearchTime();
     }
+    public void EndTime()
+    {
+        if (hiddenTime > 1)
+            hiddenTime = 1;
+
+        var AS = FindObjectOfType<RunAudioPlayer>();
+        if (AS != null)
+            AS.EndTime();
+    }
 }

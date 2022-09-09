@@ -36,13 +36,14 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
 
     void Start()
     {
-        PlayerAnswers = new int[Prices.Length];
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
         if (Types != null)
         {
+            PlayerAnswers = new int[Prices.Length];
+
             DialogueQueue.Enqueue("And now ladies and gentlemen we are here with our last contestant.");
             DialogueQueue.Enqueue("Our dear contestant, are you ready?");
             DialogueQueue.Enqueue("(Press E or LMB to start the competition)");
@@ -80,7 +81,7 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
                 }
                 DialogueQueue.Enqueue(sentence);
                 DialogueQueue.Enqueue("So... What's it's price?<br>(Click then give your answer)");
-                DialogueQueue.Enqueue("(a " + Types[i].ToString() + " with " + sentence + ")<GetAnswer>");//<GetAnswer> aþaðýda updatede siliniyo ve cevap isteniyo
+                DialogueQueue.Enqueue("(a " + Types[i].ToString() + " named " + Names[i].ToString() + " with " + sentence + ")<GetAnswer>");//<GetAnswer> aþaðýda updatede siliniyo ve cevap isteniyo
 
                 DialogueQueue.Enqueue("You chose your answer to be <CurrentAnswer>TL. The correct answer was <CorrectAnswer>TL.");
             }
@@ -90,16 +91,16 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
 
             textMesh.text = DialogueQueue.Dequeue();
             cooldown = Time.time;
+
+            foreach (int i in Prices)
+            {
+                Debug.Log(i);
+            }
         }
         else
         {
             textMesh.text = "I'm sorry my dear audience but it seems our staff forgot to select items. >:(";
             Debug.Log("<ERROR - No selected object found...>");
-        }
-
-        foreach(int i in Prices)
-        {
-            Debug.Log(i);
         }
     }
 
@@ -253,6 +254,9 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
             currentAnswer = -1;
             NumTaker.SetActive(false);
             OneTimeEnterPass = true;
+
+            if (GetComponent<AudioSource>() != null && (PlayerAnswers[playerAnswerIndex - 1] == Prices[playerAnswerIndex - 1]))
+                GetComponent<AudioSource>().Play();
         }
     }
     public void SetInfo(string[] types, string[] names, string[][] features, int[] prices)
