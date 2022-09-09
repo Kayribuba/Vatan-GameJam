@@ -95,6 +95,11 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
             textMesh.text = "I'm sorry my dear audience but it seems our staff forgot to select items. >:(";
             Debug.Log("<ERROR - No selected object found...>");
         }
+
+        foreach(int i in Prices)
+        {
+            Debug.Log(i);
+        }
     }
 
     void Update()
@@ -132,17 +137,25 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
                         sentence = sentence.Replace("<GoToScoreboard>", "");
 
                         int MaxScore = 0;
+                        int PlayerScore = 0;
+
                         foreach (int i in Prices)
                             MaxScore += i;
 
-                        int perc = 0;
-                        for(int i = 0; i < PlayerAnswers.Length; i++)
+
+                        for (int i = 0; i < Prices.Length; i++)
                         {
-                            perc += Mathf.RoundToInt(Mathf.Abs(PlayerAnswers[i] - Prices[i]) / Prices[i] * 100);
-                            Debug.Log(perc);
+                            int disposable = PlayerAnswers[i];
+                            if (PlayerAnswers[i] > Prices[i])
+                            {
+                                int fark = PlayerAnswers[i] - Prices[i];
+                                disposable = PlayerAnswers[i] - 2 * fark;
+
+                                if (disposable < 0)
+                                    disposable = 0;
+                            }
+                            PlayerScore += disposable; 
                         }
-                        perc /= PlayerAnswers.Length;
-                        int PlayerScore = MaxScore * perc;
 
                         textMeshScoreBoard.text = "<align=\"center\"><size=120%>SCORE BOARD<br><size=100%></align><br>";
 
