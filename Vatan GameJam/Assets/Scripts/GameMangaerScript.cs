@@ -26,7 +26,15 @@ public class GameMangaerScript : MonoBehaviour
     void Update()
     {
         if (endGameAt <= Time.time)
+        {
+            var AS = FindObjectOfType<RunAudioPlayer>();
+            if (AS != null)
+                AS.EndTime();
+
             sms.GoToNextLevel();
+
+            endGameAt = float.MaxValue;
+        }
 
     }
 
