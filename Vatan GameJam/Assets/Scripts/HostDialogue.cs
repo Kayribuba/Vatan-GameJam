@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
@@ -30,7 +31,7 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
     bool acceptAnswer;
     int currentAnswer = -1;
     int playerAnswerIndex;
-    bool turnCAM;
+    bool gameEnded;
     bool OneTimeEnterPass;
 
     void Start()
@@ -104,6 +105,10 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
 
     void Update()
     {
+        if (gameEnded && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E)))
+        {
+            SceneManager.LoadScene(1);
+        }
         if (!lockAnswer)
         {
             if (((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E)) && cooldown <= Time.time) || OneTimeEnterPass)

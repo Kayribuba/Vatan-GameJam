@@ -120228,7 +120228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8709869402927500908, guid: 6972fb65eaec4b94384617ddd4ac9e26, type: 3}
       propertyPath: TimeToElapse
-      value: 2
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 8709869402927500909, guid: 6972fb65eaec4b94384617ddd4ac9e26, type: 3}
       propertyPath: EndGameAfterSeconds
