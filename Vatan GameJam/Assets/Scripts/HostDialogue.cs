@@ -159,7 +159,7 @@ public class HostDialogue : MonoBehaviour //evet hardcode ama napim sýkýldým
 
                         textMeshScoreBoard.text = "<align=\"center\"><size=120%>SCORE BOARD<br><size=100%></align><br>";
 
-                        List<string> names = new List<string>() { "Kayra     ", "Murat     ", "Utku      ", "Berke     ", "Jamal     ", "Ecem      "};
+                        List<string> names = new List<string>() { "Kayra     ", "Murat     ", "Utku      ", "Berke     ", "Cem       ", "Ecem      "};
                         bool nameIsUsed = false;
                         int yourPlace = 0;
                         for(int i = 0; i < tresholds.Length; i++)
