@@ -32,6 +32,9 @@ public class ProductPopulator : MonoBehaviour
                 if (go.GetComponent<EmployeeScript>() == null)
                     go.AddComponent(typeof(EmployeeScript));
                 EmployeesInScene.Add(go.GetComponent<EmployeeScript>());
+
+                foreach (EmployeeScript g in EmployeesInScene)
+                    Debug.Log(g.gameObject);
             }
         }
 
