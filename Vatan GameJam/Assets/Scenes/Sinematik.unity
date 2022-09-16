@@ -7375,6 +7375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f9f47c890cc544a95f5bafd379c26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doyouwattoskip: Press and hold ESC to quit to start menu
+  skipping: <color="red">Skipping<color="white">
   skippingText: {fileID: 1965775268}
   waitTime: 2
 --- !u!4 &975280791
@@ -89722,7 +89724,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9dc5f728974344b46a85a3a4c2ae24f8, type: 3}
+  m_Texture: {fileID: 2800000, guid: 868d40da1265d91428e9ea63ec186ec5, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
